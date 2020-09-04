@@ -13,6 +13,11 @@ class ValidationApplicationTests {
 	}
 
 	@Test
+	void testCheckEqualsforNullandNull() {
+		assertEquals(true, checkEquals(null, null));
+	}
+
+	@Test
 	void testCheckEqualsforEmptyandEmpty() {
 		assertEquals(true, checkEquals("", ""));
 	}
